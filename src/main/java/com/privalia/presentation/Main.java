@@ -21,10 +21,6 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
 		int option = 0;
 		
-		//out.println("1.- Agregar nuevo alumno");
-		//out.println("2.- Salir");
-		//out.println("> ");
-		
 		switch(option = scanner.nextInt()) {
 		
 			case 1:				
@@ -39,7 +35,8 @@ public class Main {
 					int edad = scanner.nextInt();
 					
 					Student student = new Student(id, nombre, apellidos, edad);
-					logger.info("Student : " + student.getName());
+					logger.info("Student : " + student.getName() + " Surname" + student.getSurname() 
+					+ " Age: " + student.getAge());
 					
 					out.println("Student 2 Name: " + student.getName());
 					
@@ -53,23 +50,6 @@ public class Main {
 				break;
 				
 		}
-	
-		// Create object with setters
-		/*
-		Student student1 = new Student();
-		student1.setIdStudent(1);
-		student1.setName("Albert1");
-		student1.setSurname("Ferriz");
-		student1.setAge(33);
-		*/
-		//Create object with constructor
-		//Student student2 = new Student(2, "Albert2", "Ferriz", 33);
-		
-		//out.println("Student 1 Name: " + student1.getName());
-		//out.println("Student 2 Name: " + student2.getName());
-		
-		//logger.info("Student 1: " + student1.getName());
-		//slogger.info("Student 2: " + student2.getName());
 
 	}
 
