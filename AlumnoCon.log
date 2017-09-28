@@ -5,3 +5,20 @@
 2017-09-27 17:05:14 INFO  Main:31 - Agregar nuevo alumno
 2017-09-27 17:06:17 INFO  Main:31 - Agregar nuevo alumno
 2017-09-27 17:06:26 INFO  Main:45 - Student : 
+2017-09-28 17:13:40 INFO  Main:47 - Student :  Surnamealbert Age: 33
+2017-09-28 17:13:53 INFO  Main:47 - Student :  Surname Age: 2
+2017-09-28 17:37:58 INFO  Main:52 - Student :  Surnameferriz Age: 33
+2017-09-28 17:43:23 INFO  Main:49 - Student :  Surnameferriz Age: 33
+2017-09-28 17:50:50 INFO  Main:48 - Student :  Surnameferriz Age: 33
+2017-09-28 17:53:29 INFO  Main:49 - Student :  Surnameferriz Age: 33
+2017-09-28 17:53:48 INFO  Main:49 - Student :  Surnameferriz Age: 33
+2017-09-28 17:53:54 INFO  Main:56 - Salir
+2017-09-28 17:54:55 INFO  Main:49 - Student :  Surnamealbert Age: 33
+2017-09-28 17:55:06 INFO  Main:54 - Salir
+2017-09-28 18:00:28 INFO  Main:51 - Student :  Surnameferriz Age: 33
+2017-09-28 18:00:50 ERROR FileUtil:39 - Stream closed
+2017-09-28 18:00:50 INFO  Main:51 - Student :  Surnameferriz2 Age: 34
+2017-09-28 18:00:51 INFO  Main:54 - Salir
+2017-09-28 18:02:49 INFO  Main:51 - Student :  Surnamealbert Age: 33
+2017-09-28 18:03:00 INFO  Main:51 - Student :  Surnamealbert2 Age: 35
+2017-09-28 18:03:02 INFO  Main:54 - Salir
