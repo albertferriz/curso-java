@@ -2,7 +2,14 @@ package com.privalia.util;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 import org.apache.log4j.Logger;
+
+import java.io.BufferedWriter;
 import java.io.File;
 
 public class FileUtil {
@@ -32,10 +39,12 @@ public class FileUtil {
 	}
 	
 	public void write(String text) {
-		try {
+		Path path = Paths.get(file.getPath());
+		
+		try(BufferedWriter writer = Files.newBufferedWriter(path, Charset.forName("UTF-8"))){
 			writer.write(text);
-		} catch (IOException e) {
-			logger.error(e.getMessage());
+		} catch(IOException ex){
+			ex.printStackTrace();
 		}
 	}
 	

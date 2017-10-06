@@ -1,6 +1,8 @@
 package com.privalia.model;
 
-public class Student {
+import java.util.UUID;
+
+public class Student extends PrivaliaObject {
 	
 	private int idStudent;
 	private String name;
@@ -15,12 +17,13 @@ public class Student {
 	}
 	
 	public Student() {
-
+		super();
 	}
 	
 	public Student(int idStudent, String name, 
-			String surname, int age) 
+			String surname, int age, UUID uuid) 
 	{
+		super(uuid);
 		this.idStudent = idStudent;
 		this.name = name;
 		this.surname = surname;
@@ -137,6 +140,8 @@ public class Student {
 		return builder.toString();
 	}
 
-	
+	public static Student getStudent() {
+		return new Student();
+	}
 	
 }

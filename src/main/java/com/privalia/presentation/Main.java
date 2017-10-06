@@ -6,6 +6,7 @@ import com.privalia.util.FileUtil;
 import com.privalia.util.MethodInfo;
 import org.apache.log4j.Logger;
 import java.util.Scanner;
+import java.util.UUID;
 
 import static java.lang.System.out;
 
@@ -45,7 +46,7 @@ public class Main {
 					out.print("Edad: ");
 					int edad = scanner.nextInt();
 					
-					Student student = new Student(id, nombre, apellidos, edad);
+					Student student = new Student(id, nombre, apellidos, edad, UUID.randomUUID());
 					studentDao.add(student);
 					
 					logger.info("Student : " + student.getName() + " Surname" + student.getSurname() + " Age: " + student.getAge());
